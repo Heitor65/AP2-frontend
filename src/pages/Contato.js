@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './Contato.css'; 
+import './Contato.css'; // Importa os estilos da página
 import iconInsta from '../assets/imagens/footer_icones/instagram-brands-solid-full.svg';
 import iconFace from '../assets/imagens/footer_icones/facebook-brands-solid-full.svg';
 import iconWpp from '../assets/imagens/footer_icones/whatsapp-brands-solid-full.svg';
@@ -8,31 +8,30 @@ import iconWpp from '../assets/imagens/footer_icones/whatsapp-brands-solid-full.
 function Contato() {
   return (
     <main>
-      <section className="secao-contato">
-        <h1 className="titulo-contato">Contate-nos!</h1>
-        <hr className="linha" />
-
+      <section className="pagina-contato">
+        <h1>Contate-nos!</h1>
         <div className="container-contato">
+          
           {/* Formulário */}
-          <div className="formulario">
+          <div>
             <form>
-              <div className="campo">
+              <div>
                 <label htmlFor="nome">Nome</label>
                 <input type="text" id="nome" name="nome" />
               </div>
-              <div className="campo">
+              <div>
                 <label htmlFor="email">E-mail</label>
                 <input type="email" id="email" name="email" />
               </div>
-              <div className="campo">
+              <div>
                 <label htmlFor="numero">Número</label>
                 <input type="tel" id="numero" name="numero" />
               </div>
-              <div className="campo">
+              <div>
                 <label htmlFor="mensagem">Mensagem</label>
                 <textarea id="mensagem" name="mensagem"></textarea>
               </div>
-              <button type="submit" className="botao-enviar">Contate-nos!</button>
+              <button type="submit">Contate-nos!</button>
             </form>
           </div>
 

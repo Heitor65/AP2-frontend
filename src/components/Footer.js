@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './Footer.css';
+import './Footer.css'; // Importa os estilos do Footer
 import logoIbmec from '../assets/imagens/logo-ibmec.png';
 import iconInsta from '../assets/imagens/footer_icones/instagram-brands-solid-full.svg';
 import iconFace from '../assets/imagens/footer_icones/facebook-brands-solid-full.svg';
@@ -23,7 +23,7 @@ function Footer() {
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="contato.html">Contato</a></li>
-            <li><a href="form.html">Fale Conosco</a></li>
+            <li><a href="fale-conosco.html">Fale Conosco</a></li>
           </ul>
         </div>
 

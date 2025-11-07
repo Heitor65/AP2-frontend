@@ -1,69 +1,71 @@
 
-.topo {
-  background: #D9D9D9;
-  color: #0a1a2b;
-  border-bottom: 1px solid #d7e2f2;
-  padding: 20px 30px;
+/* ESTILO GERAL DO HEADER */
+header {
+  background-color: #D9D9D9;
+}
+
+.header-container {
+  padding: 1rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo-topo img {
-  height: 50px;
+.header-container img {
+  max-width: 50%;
+  height: auto;
 }
 
-.menu {
+.header-container nav ul {
   list-style: none;
+  gap: 30px;
   display: flex;
-  gap: 18px;
-  margin: 0;
-  padding: 0;
+  flex-direction: row;
 }
 
-.menu li {
-  list-style: none;
-}
-
-.menu a {
-  position: relative;
-  color: #0a1a2b;
-  font-size: 20px;
+.header-container nav ul li a {
   text-decoration: none;
-  padding-bottom: 8px;
+  font-size: 1.5rem;
+  color: black;
 }
 
-.menu a::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #f6ac00;
-  left: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease-out;
+.fale-conosco {
+  background-color: #E6AD2D;
+  padding: 0.5em;
+  border-radius: 15px;
 }
 
-.menu a:hover::after {
-  transform: scaleX(1);
-}
+/* RESPONSIVIDADE DO HEADER */
+@media (max-width: 480px) {
+  /* Deixa o menu e logo em coluna */
+  .header-container {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
 
-.botao-topo {
-  background: #f6ac00;
-  color: #0a1a2b;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+  /* Deixa a logo menor */
+  .header-container img {
+    max-width: 140px;
+    height: auto;
+  }
 
-.botao-topo::after {
-  content: none;
-}
+  /* Deixa o menu na vertical */
+  .header-container nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 
-.botao-topo:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* Diminui o tamanho do texto e espaçamento interno */
+  .header-container nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: center;
+  }
 }
