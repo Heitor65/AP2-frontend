@@ -1,22 +1,24 @@
-
 import React from 'react';
-import './Header.css'; // Importa os estilos do Header
-import logoIbmec from '../assets/imagens/logo-ibmec.png'; // Importa a imagem
+import './Header.css';
+import logoIbmec from '../assets/imagens/logo-ibmec.png';
+// 1. Importe o Link
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
     <header>
       <section className="header-container">
-        <a href="index.html"><img src={logoIbmec} alt="Logo da Ibmec" /></a>
+        {/* 2. Troque <a> por <Link> e href por "to" */}
+        <Link to="/"><img src={logoIbmec} alt="Logo da Ibmec" /></Link>
 
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="cases.html">Cases de Sucesso</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="fale-conosco.html" className="fale-conosco">Fale Conosco</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/sobre">Sobre Nós</Link></li>
+            <li><Link to="/cases">Cases de Sucesso</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
+            <li><Link to="/fale-conosco" className="fale-conosco">Fale Conosco</Link></li>
           </ul>
         </nav>
       </section>
