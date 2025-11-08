@@ -1,12 +1,17 @@
 /* Hero Section */
+
+main {
+    padding: 0%;
+}
 .hero {
-    background-image: url(/src/assets/imagens/IBMEC_SAO_PAULO_HERO.png);
+    background-image: url(../assets/imagens/IBMEC_SAO_PAULO_HERO.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     gap: 2rem;
     display: flex;
     flex-direction: column;
+    width: 100%;
     min-height: 80vh;
     justify-content: center;
     align-items: center;
@@ -163,6 +168,7 @@ a {
     gap: 2rem;
     padding: 3rem;
     background-color: #1145FF;
+    width: 100%;
 }
 
 .relatos h2 {
