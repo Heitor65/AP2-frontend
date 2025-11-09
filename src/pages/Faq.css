@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Gerais (Fundo Azul) */
+.faqmain {
+  background-color: rgb(0 35 85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
+
+/* Título principal (h1) da página */
+.faqmain>h1 {
+  font-size: 3em;
+  margin-bottom: 0.1em;
+  color: white;
+}
+
+/* Subtítulo logo abaixo do h1 */
+.subtitulo {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 3em;
+}
+
+/* Contêiner para cada categoria do FAQ (Geral, Sobre, etc.) */
+.faq-categoria {
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2.5em;
+}
+
+/* Título de cada categoria (h2) */
+.faq-categoria h2 {
+  font-size: 2.2em;
+  color: #E6AD2D;
+  border-bottom: 2px solid #E6AD2D;
+  padding-bottom: 10px;
+  margin-bottom: 1em;
+}
+
+/* Contêiner do par (pergunta + resposta) */
+details {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+}
+
+/* A pergunta clicável (sumário) */
+summary {
+  padding: 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  list-style: none;
+  /* Remove a setinha padrão */
+}
+
+/* A resposta (parágrafo dentro do details) */
+details>p {
+  padding: 0 1.2em 1.2em 1.2em;
+  margin: 0;
+  border-top: 1px solid #ccc;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Seção Amarela (Não achou sua dúvida?) */
+#duvida {
+  background-color: #E6AD2D;
+  width: 100%;
+  padding: 3em 0;
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+/* A box branca dentro da seção amarela */
+.duvida-box {
+  background-color: whitesmoke;
+  border-radius: 1em;
+  color: black;
+  text-align: center;
+  width: 76%;
+  /* reduzida para deixar espaço lateral dentro da área amarela */
+  max-width: 36em;
+  /* largura máxima menor */
+  padding: 2.2em;
+  margin: 0 auto;
+  /* centraliza e garante espaçamento lateral */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Título dentro do card branco (h2) */
+.duvida-box h2 {
+  margin-top: 0;
+}
+
+/* Formulário dentro do card branco */
+#duvida form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+/* Label (título) do campo de dúvida */
+#duvida label {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Campo de texto (input) da dúvida */
+#duvida input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #dbdbdb;
+}
+
+/* Botão de envio (submit) */
+#duvida input[type="submit"] {
+  background-color: rgb(0 35 85);
+  color: white;
+  padding: 12px 65px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+
+  /* Seção amarela que envolve todo o bloco de dúvidas */
+  #duvida {
+    padding: 1.2em 0;
+  }
+
+  /* Card branco interno (reduzido para não encostar na amarela) */
+  .duvida-box {
+    width: 76%;
+    max-width: 420px;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+    margin: 0 auto;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  }
+
+  /* Título dentro do card */
+  .duvida-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  /* Formulário: empilha elementos verticalmente em mobile */
+  #duvida form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: stretch;
+  }
+
+  /* Rótulo do campo */
+  #duvida label {
+    font-size: 0.95rem;
+  }
+
+  /* Campo de texto */
+  #duvida input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  /* Botão de envio */
+  #duvida input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}

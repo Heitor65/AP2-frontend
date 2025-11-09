@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Contato from './pages/Contato';
 import Forms from './pages/Forms';   
 import Sobre from './pages/Sobre';
+import Faq from './pages/Faq';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/Forms" element={<Forms />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/Faq" element={<Faq />} />
       </Routes>
       
       <Footer /> 
