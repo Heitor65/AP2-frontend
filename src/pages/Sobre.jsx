@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import './Sobre.css';
 import ibmecBarra from '../assets/imagens/IBMEC_BARRA.png';
 import globo2 from '../assets/imagens/globo2.png';
@@ -11,7 +9,6 @@ import starImg from '../assets/imagens/Star.png';
 function Sobre() {
 		return (
 			<>
-				<Header />
 
 				<main className="pagina-sobre">
 					<section className="hero">
@@ -111,7 +108,6 @@ function Sobre() {
 					</div>
 				</main>
 
-				<Footer />
 			</>
 		);
 }
