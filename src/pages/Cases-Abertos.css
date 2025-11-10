@@ -1,0 +1,128 @@
+main {
+    background-color: #002355;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: #E6AD2D;
+    margin: 1.4rem;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+.titulo h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.titulo img {
+    width: 50%;
+    height: auto;
+    margin-right: 15px;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.container section {
+    width: 75%;
+}
+
+.container aside {
+    width: 25%;
+}
+
+.container aside h3 {
+    color: #E6AD2D;
+    font-size: 2rem;
+}
+
+.projeto{
+    background-color: #ffffff;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.projeto h3 {
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.projeto p {
+    font-size: 1.5rem;
+    margin: 0.5rem;
+}
+
+.projeto img {
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 0.5rem;
+}
+
+.card p, h3, a {
+    padding: 0.5rem;
+    color: black;
+}
+
+.card img {
+    width: 100%;
+    height: 7rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #afafaf;
+    font-size: 1.5rem;
+    padding: 0.05rem;
+    border-radius: 100%;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6AD2D;
+    padding: 2rem;
+}
+
+.cta h4 {
+    color: #092380;
+    font-size: 3rem;
+}
+
+.cta p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cta a {
+    background-color: #092380;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+}

@@ -8,6 +8,7 @@ import Forms from './pages/Forms';
 import Sobre from './pages/Sobre';
 import Faq from './pages/Faq';
 import Cases from './pages/Cases';
+import CasesAbertos from './pages/Cases-Abertos';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/Faq" element={<Faq />} />
         <Route path="/Cases" element={<Cases />} />
+        <Route path="/CasesAbertos" element={<CasesAbertos />} />
       </Routes>
       
       <Footer /> 
