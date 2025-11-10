@@ -1,0 +1,260 @@
+main {
+  background-color: rgba(0, 35, 85, 1);
+}
+
+/* Seção hero com imagem de fundo. Caminho ajustado: /imagens/index_cases/foto.cases.png */
+.seção-hero {
+  background-image: url(/imagens/index_cases/foto.cases.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cor branca do h1 e deixa ele com um tamanho de fonte específico*/
+.seção-hero h1 {
+  font-size: 8rem;
+  color: rgb(250, 201, 41);
+}
+
+/* deixa o h3 e h2 no centro e alinhados com uma cor de fundo específica*/
+.seção-p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  font-size: 30px;
+}
+
+/* Cor do h3*/
+.meu-h3 {
+  color: rgba(230, 173, 45, 1);
+  font-size: 5rem;
+}
+
+/* Cor do h2*/
+.meu-h2 {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* coloca os itens alinhados no centro em coluna*/
+.cases-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 32px;
+  gap: 30px;
+}
+
+/* deixa o bloco dos cases com uma cor específica e com bordas arrendondadas */
+.cases-group {
+  width: 95%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 61px;
+  height: 440px;
+  padding: 20px;
+}
+
+/* tamanho e cor do h2 dos cases. */
+.cases-group h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #111;
+}
+
+/* deixa a linha de cases corretas com um grid de 3 em 3 */
+.cases-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+
+/* estilo do card com cor de fundo branca, bordas arredondadas e layout em coluna */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* deixa as imagens na proporção padrão sem que distorça as imagens*/
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* deixa o h3 com margem correta e uma cor específica */
+.card h3 {
+  margin: 10px 16px 16px;
+  color: #111;
+}
+
+/* deixa os parágrafos com uma margem correta*/
+.card p {
+  margin: 8px 16px 16px;
+}
+
+/* deixa o botão com uma cor e tamanhos específicos e com borda arrendondada */
+.card a {
+  margin: 0 16px 16px auto;
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: #efefef;
+  text-decoration: none;
+  color: #111;
+}
+
+/* CORREÇÃO E AUMENTO DO TAMANHO DAS LOGOS DO RODAPÉ */
+/* ------------------------------------------------ */
+
+/* Estilo do container dos ícones do rodapé */
+.social-icons {
+  display: flex;
+  gap: 15px; /* Espaço entre os ícones */
+  margin-top: 10px;
+}
+
+/* Aumenta o tamanho da IMAGEM (<img>) dentro do link (<a>) nos ícones sociais */
+.social-icons a img {
+  width: 40px; /* AJUSTADO PARA 40px */
+  height: 40px; /* AJUSTADO PARA 40px */
+  border-radius: 5px; 
+}
+
+/* ------------------------------------------------ */
+
+@media (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  .cases-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    justify-items: center;
+    width: 100%;
+    padding: 0 8px;
+  }
+  .card {
+    width: 100%;
+    max-width: none;
+    border-radius: 8px;
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  .card h3 {
+    font-size: 0.9rem;
+    margin: 8px 8px 4px;
+    text-align: center;
+  }
+  .card p {
+    font-size: 2rem;
+    margin: 4px 8px;
+    text-align: center;
+  }
+  .card a {
+    width: 28px;
+    height: 28px;
+    margin: 4px auto 8px;
+  }
+  .cases-container {
+    padding: 16px 8px;
+    gap: 16px;
+  }
+  .cases-group {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 16px;
+  }
+  .seção-hero {
+    min-height: 35vh;
+    padding: 16px;
+    background-position: center;
+  }
+  .seção-hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .seção-p {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+  }
+  .cases-group h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 853px) {
+
+  .case-layout {
+    flex-direction: column; 
+  }
+
+  .case-detail-hero {
+    height: 30vh; 
+  }
+
+  .case-detail-hero h1 {
+    font-size: 2.5rem; 
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .page-container {
+    padding: 20px;
+  }
+
+  .case-main-content {
+    padding: 30px;
+  }
+
+  .case-main-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .case-sidebar h3 {
+    text-align: center;
+  }
+
+  .other-projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+  }
+
+  .cta-card {
+    padding: 40px 25px;
+  }
+
+  .cta-card h2 {
+    font-size: 2rem;
+  }
+
+  .cta-card p {
+    font-size: 1.1rem;
+  }
+}
