@@ -1,0 +1,442 @@
+/* Scoped styles for the Sobre page */
+.pagina-sobre {
+  margin: 0;
+  background-color: rgb(0 35 85); /* Cor de fundo azul escura */
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.pagina-sobre main {
+  padding: 0; /* Remove padding para o hero ocupar a tela toda */
+  width: 100%;
+}
+
+/* Hero (Topo) */
+.pagina-sobre .hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagina-sobre .hero-imagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.pagina-sobre .hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer */
+}
+
+.pagina-sobre .hero-imagem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* você pode adicionar um gradiente aqui se quiser escurecer a imagem */
+}
+
+.pagina-sobre .hero-conteudo {
+  position: relative; /* Posição na frente da imagem/overlay */
+  z-index: 2;
+  width: 90%;
+  max-width: 800px;
+}
+
+.pagina-sobre .hero-conteudo h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.25em 0;
+}
+
+.pagina-sobre .hero-conteudo .introducao p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Conteúdo principal (fundo azul) */
+.pagina-sobre .conteudo-principal {
+  background-color: rgb(0 35 85);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagina-sobre .separador-amarelo {
+  width: 100%;
+  max-width: 850px;
+  height: 4px;
+  background-color: #E6AD2D;
+  border: 0;
+  margin: 1em 0 2em 0;
+}
+
+.pagina-sobre .destaques-geral {
+  background-color: #E6AD2D;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.pagina-sobre .box,
+.pagina-sobre .destaques-box,
+.pagina-sobre .parceiros-box {
+  background-color: #fdfaf6; /* Cor creme/bege */
+  color: #222;
+  border-radius: 8px;
+  padding: 2em;
+  width: 100%;
+  max-width: 800px; /* Largura máxima dos cards */
+  margin-bottom: 2em;
+}
+
+.pagina-sobre .conteudo-principal .box:last-child,
+.pagina-sobre .destaques-geral .destaques-box:last-child,
+.pagina-sobre .conteudo-principal .parceiros-box:last-child {
+  margin: 0;
+}
+
+.pagina-sobre .box h2,
+.pagina-sobre .destaques-box h2,
+.pagina-sobre .parceiros-box h2 {
+  color: rgb(0 35 85);
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+.pagina-sobre .box p,
+.pagina-sobre .destaques-box p,
+.pagina-sobre .destaques-box li {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.pagina-sobre .destaques-box ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0;
+}
+
+.pagina-sobre .destaques-box li {
+  margin-bottom: 0.5em;
+}
+
+.pagina-sobre .lista-parceiros {
+  display: flex;
+  justify-content: space-around; /* Espaça os itens */
+  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.pagina-sobre .parceiro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.pagina-sobre .parceiro-item img {
+  max-width: 100%;
+  height: 60px;
+  object-fit: contain; /* Garante que a logo não distorça */
+  margin-bottom: 1em;
+}
+
+.pagina-sobre .estrelas {
+  display: flex;
+  gap: 5px; /* Espaço entre as estrelas */
+}
+
+.pagina-sobre .estrelas img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Container central usado pelas seções */
+.pagina-sobre .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .pagina-sobre {
+    overflow-x: hidden;
+  }
+
+  .pagina-sobre .hero {
+    height: 300px;
+  }
+
+  .pagina-sobre .hero-conteudo h1 {
+    font-size: 2.5em;
+  }
+
+  .pagina-sobre .hero-conteudo .introducao p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .pagina-sobre .conteudo-principal,
+  .pagina-sobre .destaques-geral {
+    padding: 1.5em 1em;
+  }
+
+  .pagina-sobre .box,
+  .pagina-sobre .destaques-box,
+  .pagina-sobre .parceiros-box {
+    padding: 1.5em;
+  }
+
+  .pagina-sobre .box h2,
+  .pagina-sobre .destaques-box h2,
+  .pagina-sobre .parceiros-box h2 {
+    font-size: 1.8em;
+  }
+
+  .pagina-sobre .box p,
+  .pagina-sobre .destaques-box p,
+  .pagina-sobre .destaques-box li {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .pagina-sobre .lista-parceiros {
+    justify-content: center;
+  }
+}
+.pagina-sobre main {
+  padding: 0;
+  width: 100%;
+}
+
+.pagina-sobre .hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagina-sobre .hero-imagem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.pagina-sobre .hero-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pagina-sobre .hero-imagem::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pagina-sobre .hero-conteudo {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 800px;
+}
+
+.pagina-sobre .hero-conteudo h1 {
+  font-size: 3.5em;
+  margin: 0 0 0.25em 0;
+}
+
+.pagina-sobre .hero-conteudo .introducao p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+.pagina-sobre .conteudo-principal {
+  background-color: rgb(0 35 85);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagina-sobre .separador-amarelo {
+  width: 850px;
+  height: 4px;
+  background-color: #E6AD2D;
+  border: 0;
+  margin: 1em 0 2em 0;
+}
+
+.pagina-sobre .destaques-geral {
+  background-color: #E6AD2D;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.pagina-sobre .box,
+.pagina-sobre .destaques-box,
+.pagina-sobre .parceiros-box {
+  background-color: #fdfaf6;
+  color: #222;
+  border-radius: 8px;
+  padding: 2em;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2em;
+}
+
+.pagina-sobre .conteudo-principal .box:last-child,
+.pagina-sobre .destaques-geral .destaques-box:last-child,
+.pagina-sobre .conteudo-principal .parceiros-box:last-child {
+  margin: 0;
+}
+
+.pagina-sobre .box h2,
+.pagina-sobre .destaques-box h2,
+.pagina-sobre .parceiros-box h2 {
+  color: rgb(0 35 85);
+  font-size: 2.2em;
+  margin-top: 0;
+}
+
+.pagina-sobre .box p,
+.pagina-sobre .destaques-box p,
+.pagina-sobre .destaques-box li {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #333;
+}
+
+.pagina-sobre .destaques-box ul {
+  list-style: none;
+}
+
+.pagina-sobre .destaques-box li {
+  margin-bottom: 0.5em;
+}
+
+.pagina-sobre .lista-parceiros {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.pagina-sobre .parceiro-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.pagina-sobre .parceiro-item img {
+  max-width: 100%;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.pagina-sobre .estrelas {
+  display: flex;
+  gap: 5px;
+}
+
+.pagina-sobre .estrelas img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .pagina-sobre html,
+  .pagina-sobre body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagina-sobre .hero {
+    height: 300px;
+  }
+
+  .pagina-sobre .hero-conteudo h1 {
+    font-size: 2.5em;
+  }
+
+  .pagina-sobre .hero-conteudo .introducao p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .pagina-sobre .conteudo-principal,
+  .pagina-sobre .destaques-geral {
+    padding: 1.5em 1em;
+  }
+
+  .pagina-sobre .box,
+  .pagina-sobre .destaques-box,
+  .pagina-sobre .parceiros-box {
+    padding: 1.5em;
+  }
+
+  .pagina-sobre .box h2,
+  .pagina-sobre .destaques-box h2,
+  .pagina-sobre .parceiros-box h2 {
+    font-size: 1.8em;
+  }
+
+  .pagina-sobre .box p,
+  .pagina-sobre .destaques-box p,
+  .pagina-sobre .destaques-box li {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .pagina-sobre .lista-parceiros {
+    justify-content: center;
+  }
+}
+
+.pagina-sobre .container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+

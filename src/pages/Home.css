@@ -1,0 +1,356 @@
+/* Hero Section */
+
+main {
+    padding: 0%;
+}
+.hero {
+    background-image: url(../assets/imagens/IBMEC_SAO_PAULO_HERO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*TEXTOS HERO*/
+.hero h1 {
+    font-size: 6rem;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.hero a {
+    background-color: #1245FF;
+    padding: 0.7rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.sobre-section {
+    background-color: #002355;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem;
+    justify-content: space-around;
+}
+
+.sobre-section div {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.sobre-section h2,
+p {
+    color: white;
+}
+
+.sobre-section h2 {
+    font-size: 4rem;
+}
+
+.sobre-section p {
+    font-size: 2rem;
+}
+
+.sobre-section img {
+    width: 50%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.dados-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E6AD2D;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.dados-container h2 {
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.dados-container div {
+    display: flex;
+    flex-direction: row;
+    background-color: #E6AD2D;
+    justify-content: space-between;
+}
+
+.dados-container div div {
+    background-color: white;
+    margin: 2rem;
+    padding: 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.dados-container div div p {
+    color: black;
+    font-size: 2rem;
+}
+
+.cases-container {
+    background-color: #002355;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.cases-container h2 {
+    padding-top: 1rem;
+    padding-bottom: 0%;
+    color: white;
+    font-size: 3.5rem;
+}
+
+.cases-container div {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #afafaf;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card p,
+h3,
+a {
+    padding: 0.5rem;
+    color: black;
+}
+
+/* Imagem do topo do card */
+.card img {
+    width: 100%;
+    height: 7rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: #efefef;
+    font-size: 1.5rem;
+    padding: 0.05rem;
+    border-radius: 100%;
+}
+
+.relatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: #1145FF;
+    width: 100%;
+}
+
+.relatos h2 {
+    color: #E6AD2D;
+    font-size: 3rem;
+}
+
+.relatos article {
+
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+}
+
+.relatos article p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* RESPONSIVIDADE */
+/*Aqui foi basicamente alinhar os textos, mudar a flex-direction para column e mexer no tamanho dos itens*/
+@media (max-width: 480px) {
+
+    /* deixa apenas com rolagem vertical evitando espaçamento branco ao lado */
+    html,
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        background-image: url(../assets/imagens/IBMEC_SAO_PAULO_HERO.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1,
+    h2,
+    a {
+        text-align: center;
+    }
+
+    .sobre-section {
+        background-color: #002355;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem;
+        justify-content: space-around;
+    }
+
+    .sobre-section img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+        margin: 1rem;
+    }
+
+    .sobre-section h2,
+    p {
+        text-align: center;
+    }
+
+    .dados-container {
+        display: flex;
+        flex-direction: column;
+        background-color: #E6AD2D;
+        align-items: center;
+        min-height: 50vh;
+    }
+
+    .dados-container h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        padding: 1rem;
+    }
+
+    .dados-container div {
+        display: flex;
+        flex-direction: column;
+        background-color: #E6AD2D;
+        justify-content: space-between;
+    }
+
+    .dados-container div div {
+        background-color: white;
+        margin: 2rem;
+        padding: 3rem;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .dados-container div div p {
+        color: black;
+        font-size: 2rem;
+    }
+
+    .cases-container {
+        background-color: #002355;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .cases-container div {
+        border-radius: 10px;
+        background-color: #afafaf;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .card p,
+    h3,
+    a {
+        padding: 0.5rem;
+        color: black;
+    }
+
+    .card img {
+        width: 100%;
+        height: 7rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card a {
+        text-decoration: none;
+        background-color: #afafaf;
+        font-size: 1.5rem;
+        padding: 0.05rem;
+        border-radius: 100%;
+    }
+
+    .relatos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 3rem;
+        background-color: #1145FF;
+    }
+
+    .relatos h2 {
+        color: #E6AD2D;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .relatos article {
+
+        border-radius: 10px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 800px;
+    }
+
+    .relatos article p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}

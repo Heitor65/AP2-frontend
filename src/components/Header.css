@@ -1,0 +1,73 @@
+
+/* ESTILO GERAL DO HEADER */
+header {
+  background-color: #D9D9D9;
+}
+
+.header-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container img {
+  max-width: 50%;
+  height: auto;
+}
+
+.header-container nav ul {
+  list-style: none;
+  gap: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-container nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  white-space: nowrap;
+}
+
+.fale-conosco {
+  background-color: #E6AD2D;
+  padding: 0.5em;
+  border-radius: 15px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVIDADE DO HEADER */
+@media (max-width: 480px) {
+  /* Deixa o menu e logo em coluna */
+  .header-container {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Deixa a logo menor */
+  .header-container img {
+    max-width: 140px;
+    height: auto;
+  }
+
+  /* Deixa o menu na vertical */
+  .header-container nav ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Diminui o tamanho do texto e espaçamento interno */
+  .header-container nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    text-align: center;
+  }
+}
