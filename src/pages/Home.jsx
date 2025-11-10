@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Importação necessária
 import './Home.css'; // Importa o CSS específico da Home
 
 // Importa as imagens
@@ -17,7 +17,7 @@ function Home() {
       <section className="hero"> {/* Hero section */}
         <h1>Título</h1>
         <h2>Lorem ipsum, dolor sit amet</h2>
-        <a href="fale-conosco.html">Fale conosco</a>
+        <Link to="/Forms">Fale Conosco</Link>
       </section>
 
       <section className="sobre-section"> {/* sobre nós */}
@@ -53,37 +53,39 @@ function Home() {
             <img src={imgCaseMac} alt="fachada MacDonalds" />
             <h3>Case 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            {/* 2. Corrigido para usar o 'Link' importado */}
+            <Link to="/CasesAbertos">→</Link> 
           </article>
           <article className="card">
             <img src={imgCasePetro} alt="fachada Petrobras" />
             <h3>Case 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            {/* 3. Corrigido de '<a hr>' para '<a href="#">' */}
+            <Link to="/CasesAbertos">→</Link>
           </article>
           <article className="card">
             <img src={imgCaseItau} alt="Desenho de uma fachada do banco Itaú" />
             <h3>Case 3</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            <Link to="/CasesAbertos">→</Link>
           </article>
           <article className="card">
             <img src={imgCaseNasa} alt="logo da nasa" />
             <h3>Case 4</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            <Link to="/CasesAbertos">→</Link>
           </article>
           <article className="card">
             <img src={imgCaseGov} alt="logo do Governo Federal do Brasil" />
             <h3>Case 5</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            <Link to="/CasesAbertos">→</Link>
           </article>
           <article className="card">
             <img src={imgCaseSony} alt="fachada da Sony" />
             <h3>Case 6</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <a href="case-aberto.html">→</a>
+            <Link to="/CasesAbertos">→</Link>
           </article>
         </div>
       </section>

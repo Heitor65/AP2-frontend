@@ -18,7 +18,7 @@ function Header() {
             <li><Link to="/cases">Cases de Sucesso</Link></li>
             <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/contato">Contato</Link></li>
-            <li><Link to="/fale-conosco" className="fale-conosco">Fale Conosco</Link></li>
+            <li><Link to="/Forms" className="fale-conosco">Fale Conosco</Link></li>
           </ul>
         </nav>
       </section>
