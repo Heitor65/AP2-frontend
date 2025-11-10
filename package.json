@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "cases",
-=======
-  "name": "y",
->>>>>>> 58d8738bf7a95102650c73f25c9fc3d8fc3d40de
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -27,21 +23,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-=======
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.5"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "@types/react": "^19.1.16",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
-    "eslint": "^9.36.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.22",
-    "globals": "^16.4.0",
->>>>>>> 58d8738bf7a95102650c73f25c9fc3d8fc3d40de
     "vite": "^7.2.2"
   }
 }

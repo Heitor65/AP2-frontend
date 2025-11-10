@@ -1,0 +1,217 @@
+/* Cor de fundo do main*/
+main {
+  background-color: rgba(0, 35, 85, 1);
+}
+
+/* Seção hero com imagem de fundo e colocando tudo centralizado*/
+.seção-hero {
+  background-image: url(../imagens/foto.cases.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cor branca do h1 e deixa ele com um tamanho de fonte específico*/
+.seção-hero h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+/* deixa o h3 e h2 no centro e alinhados com uma cor de fundo específica*/
+.seção-p {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/* Cor do h3*/
+.meu-h3 {
+  color: rgba(230, 173, 45, 1);
+}
+
+/* Cor do h2*/
+.meu-h2 {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* coloca os itens alinhados no centro em coluna*/
+.cases-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 32px;
+  gap: 48px;
+}
+
+/* deixa o bloco dos cases com uma cor específica e com bordas arrendondadas */
+.cases-group {
+  width: 95%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 61px;
+  height: 440px;
+  padding: 20px;
+}
+
+/* tamanho e cor do h2 dos cases. */
+.cases-group h2 {
+  font-size: 32px;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: #111;
+}
+
+/* deixa a linha de cases corretas com um grid de 3 em 3 */
+.cases-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+
+/* estilo do card com cor de fundo branca, bordas arredondadas e layout em coluna */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+/* deixa as imagens na proporção padrão sem que distorça as imagens*/
+.card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* deixa o h3 com margem correta e uma cor específica */
+.card h3 {
+  margin: 10px 16px 16px;
+  color: #111;
+}
+
+/* deixa os parágrafos com uma margem correta*/
+.card p {
+  margin: 8px 16px 16px;
+}
+
+/* deixa o botão com uma cor e tamanhos específicos e com borda arrendondada */
+.card a {
+  margin: 0 16px 16px auto;
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  ;
+  border-radius: 999px;
+  background: #efefef;
+  text-decoration: none;
+  color: #111;
+}
+
+@media (max-width: 480px) {
+
+  /* deixa apenas com rolagem vertical evitando espaçamento branco ao lado */
+  html,
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* deixa os 4 cards lado a lado */
+  .cases-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    justify-items: center;
+    width: 100%;
+    padding: 0 8px;
+  }
+
+  /* deixa os cases se adaptarem à largura da coluna */
+  .card {
+    width: 100%;
+    max-width: none;
+    border-radius: 8px;
+  }
+
+  /* deixa as imagens nas condições perfeitas e tira os espaços brancos da imagem */
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* deixa o h3 menor */
+  .card h3 {
+    font-size: 0.9rem;
+    margin: 8px 8px 4px;
+    text-align: center;
+  }
+
+  /* deixa os parágrafos menores  */
+  .card p {
+    font-size: 0.7rem;
+    margin: 4px 8px;
+    text-align: center;
+  }
+
+  /* deixa o botão menor */
+  .card a {
+    width: 28px;
+    height: 28px;
+    margin: 4px auto 8px;
+  }
+
+  /* deixa o espaçamento interno mais adequado ao celular */
+  .cases-container {
+    padding: 16px 8px;
+    gap: 16px;
+  }
+
+  /* mantém a borda arrenondada dos cases só que com tamanhos menores */
+  .cases-group {
+    width: 100%;
+    height: auto;
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  /* deixa seção hero menor e com um espaçamento interno mais adequado ao celular */
+  .seção-hero {
+    min-height: 35vh;
+    padding: 16px;
+    background-position: center;
+  }
+
+  /* deixa o h1 menor */
+  .seção-hero h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  /* deixa o parágrafo menor */
+  .seção-p {
+    font-size: 18px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  /* deixa o h2 menor */
+  .cases-group h2 {
+    font-size: 22px;
+  }
+}
