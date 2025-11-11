@@ -5,20 +5,20 @@ import './Cases.css'; // Importa o CSS da página
 function Cases() {
   return (
     <main>
-      <section class="seção-hero-cases">
+      <section className="seção-hero-cases">
         <h1>Cases de sucesso</h1>
       </section>
-      <section class="seção-p">
-        <h3 class="meu-h3">Cases de sucesso</h3>
-        <h2 class="meu-h2">Provas da nossa excelência</h2>
+      <section className="seção-p">
+        <h3 className="meu-h3">Cases de sucesso</h3>
+        <h2 className="meu-h2">Provas da nossa excelência</h2>
       </section>
 
-      <section class="cases-container">
-        <div class="cases-group">
+      <section className="cases-container">
+        <div className="cases-group">
           <h2>Sistemas embarcados</h2>
-          <div class="cases-row">
+          <div className="cases-row">
 
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_mac.png" alt="fachada MacDonalds" />
               <h3>Case 1</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -26,20 +26,20 @@ function Cases() {
             </article>
 
 
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_petrobras.png" alt="fachada Petrobras" />
               <h3>Case 2</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
 
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_itau.png" alt="fachada Itaú" />
               <h3>Case 3</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/nubank.png" alt="nubank" />
               <h3>Case 4</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -48,29 +48,29 @@ function Cases() {
           </div>
         </div>
 
-        <div class="cases-group">
+        <div className="cases-group">
           <h2>Projetos Front-end/Back-end</h2>
-          <div class="cases-row">
+          <div className="cases-row">
 
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_nasa.png" alt="logo NASA" />
               <h3>Case 5</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_governo.png" alt="logo Governo do Brasil" />
               <h3>Case 6</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/index_cases/index_cases_sony.png" alt="fachada Sony" />
               <h3>Case 7</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="assets/imagens/amazon.png" alt="amazon" />
               <h3>Case 8</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -79,29 +79,29 @@ function Cases() {
           </div>
         </div>
 
-        <div class="cases-group">
+        <div className="cases-group">
           <h2>Projetos Mobile</h2>
-          <div class="cases-row">
+          <div className="cases-row">
 
-            <article class="card">
+            <article className="card">
               <img src="imagens/ifood.png" alt="logo iFood" />
               <h3>Case 9</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/ambev.png" alt="logo Ambev" />
               <h3>Case 10</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/celular.png" alt="case Now" />
               <h3>Case 11</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               <a href="case-aberto.html">→</a>
             </article>
-            <article class="card">
+            <article className="card">
               <img src="imagens/microsoft.png" alt="microsoft" />
               <h3>Case 12</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
