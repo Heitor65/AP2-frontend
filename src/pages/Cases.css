@@ -4,11 +4,14 @@ main {
 }
 
 /* Seção hero com imagem de fundo e colocando tudo centralizado*/
-.seção-hero {
-  background-image: url(../imagens/foto.cases.png);
+.seção-hero-cases {
+  /* 1. CORREÇÃO: Mudei o caminho da imagem para a pasta /public, 
+     que é mais estável no Vite do que o /assets. */
+  background-image: url(/imagens/index_cases/foto.cases.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
   gap: 32px;
   display: flex;
   flex-direction: column;
@@ -18,7 +21,7 @@ main {
 }
 
 /* Cor branca do h1 e deixa ele com um tamanho de fonte específico*/
-.seção-hero h1 {
+.seção-hero-cases h1 {
   font-size: 4rem;
   color: white;
 }
@@ -52,29 +55,34 @@ main {
   gap: 48px;
 }
 
-/* deixa o bloco dos cases com uma cor específica e com bordas arrendondadas */
-.cases-group {
+/* 2. CORREÇÃO: Seletor agora é mais específico para "vencer" o Home.css */
+.cases-container .cases-group {
   width: 95%;
-  background-color: rgba(217, 217, 217, 1);
+  background-color: #B0B0B0;
   border-radius: 61px;
   height: 440px;
   padding: 20px;
+  /* Anula o flex-wrap vazado */
+  display: block; 
+  flex-wrap: nowrap;
 }
 
 /* tamanho e cor do h2 dos cases. */
-.cases-group h2 {
+.cases-container .cases-group h2 {
   font-size: 32px;
   margin-bottom: 1rem;
   text-align: left;
   color: #111;
 }
 
-/* deixa a linha de cases corretas com um grid de 3 em 3 */
-.cases-row {
-  display: grid;
+/* 3. CORREÇÃO: Seletor mais específico para "vencer" o Home.css */
+.cases-container .cases-row {
+  display: grid; /* Garante o grid */
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   justify-items: center;
+  /* Anula o flex-wrap vazado */
+  flex-wrap: nowrap; 
 }
 
 /* estilo do card com cor de fundo branca, bordas arredondadas e layout em coluna */
@@ -104,6 +112,7 @@ main {
 /* deixa os parágrafos com uma margem correta*/
 .card p {
   margin: 8px 16px 16px;
+  color: #111; /* 4. CORREÇÃO: Adicionei a cor que faltava */
 }
 
 /* deixa o botão com uma cor e tamanhos específicos e com borda arrendondada */
@@ -113,12 +122,14 @@ main {
   place-items: center;
   width: 36px;
   height: 36px;
-  ;
   border-radius: 999px;
   background: #efefef;
   text-decoration: none;
   color: #111;
 }
+
+/* 5. REMOVIDO: Aquele override no final foi removido 
+   porque as correções agora estão direto nas classes. */
 
 @media (max-width: 480px) {
 
@@ -131,7 +142,7 @@ main {
   }
 
   /* deixa os 4 cards lado a lado */
-  .cases-row {
+  .cases-container .cases-row { /* Seletor atualizado */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
@@ -183,7 +194,7 @@ main {
   }
 
   /* mantém a borda arrenondada dos cases só que com tamanhos menores */
-  .cases-group {
+  .cases-container .cases-group { /* Seletor atualizado */
     width: 100%;
     height: auto;
     padding: 12px;
@@ -211,7 +222,8 @@ main {
   }
 
   /* deixa o h2 menor */
-  .cases-group h2 {
+  .cases-container .cases-group h2 { /* Seletor atualizado */
     font-size: 22px;
   }
+
 }

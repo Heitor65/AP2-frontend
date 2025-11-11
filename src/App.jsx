@@ -24,7 +24,7 @@ function App() {
         <Route path="/Forms" element={<Forms />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/Faq" element={<Faq />} />
-        <Route path="/Cases" element={<Cases />} />
+        <Route path="/cases" element={<Cases />} />
         <Route path="/CasesAbertos" element={<CasesAbertos />} />
       </Routes>
       
