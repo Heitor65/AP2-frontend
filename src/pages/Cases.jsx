@@ -9,7 +9,7 @@ function Cases() {
         <h1>Cases de sucesso</h1>
       </section>
       <section className="seção-p">
-        <h3 className="meu-h3">Cases de sucesso</h3>
+        <h3 className="meu-h3">Cases</h3>
         <h2 className="meu-h2">Provas da nossa excelência</h2>
       </section>
 
@@ -22,7 +22,7 @@ function Cases() {
               <img src="imagens/index_cases/index_cases_mac.png" alt="fachada MacDonalds" />
               <h3>Case 1</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
 
 
@@ -30,20 +30,20 @@ function Cases() {
               <img src="imagens/index_cases/index_cases_petrobras.png" alt="fachada Petrobras" />
               <h3>Case 2</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
 
             <article className="card">
               <img src="imagens/index_cases/index_cases_itau.png" alt="fachada Itaú" />
               <h3>Case 3</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
-              <img src="imagens/nubank.png" alt="nubank" />
+              <img src="imagens/index_cases/nubank.png" alt="nubank" />
               <h3>Case 4</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
           </div>
         </div>
@@ -56,25 +56,25 @@ function Cases() {
               <img src="imagens/index_cases/index_cases_nasa.png" alt="logo NASA" />
               <h3>Case 5</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
               <img src="imagens/index_cases/index_cases_governo.png" alt="logo Governo do Brasil" />
               <h3>Case 6</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
               <img src="imagens/index_cases/index_cases_sony.png" alt="fachada Sony" />
               <h3>Case 7</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
-              <img src="assets/imagens/amazon.png" alt="amazon" />
+              <img src="imagens/index_cases/amazon.png" alt="amazon" />
               <h3>Case 8</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
           </div>
         </div>
@@ -84,28 +84,28 @@ function Cases() {
           <div className="cases-row">
 
             <article className="card">
-              <img src="imagens/ifood.png" alt="logo iFood" />
+              <img src="imagens/index_cases/ifood.png" alt="logo iFood" />
               <h3>Case 9</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
-              <img src="imagens/ambev.png" alt="logo Ambev" />
+              <img src="imagens/index_cases/ambev.png" alt="logo Ambev" />
               <h3>Case 10</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
-              <img src="imagens/celular.png" alt="case Now" />
+              <img src="imagens/index_cases/celular.png" alt="Zee Now" />
               <h3>Case 11</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
             <article className="card">
-              <img src="imagens/microsoft.png" alt="microsoft" />
+              <img src="imagens/index_cases/microsoft.png" alt="microsoft" />
               <h3>Case 12</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="case-aberto.html">→</a>
+              <Link to="/CasesAbertos">→</Link>
             </article>
           </div>
         </div>
