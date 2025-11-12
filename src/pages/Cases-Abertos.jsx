@@ -6,8 +6,8 @@ import './Cases-Abertos.css';
 export default function Cases() {
   return (
     <main className="cases">
-      <section>
-        <h1>Cases</h1>
+      <section className="seção-hero-cases-abertos">
+        <h1>Cases de Sucesso</h1>
       </section>
 
       <section className="titulo">
@@ -15,7 +15,7 @@ export default function Cases() {
           Projeto Mobile <br />-<br /> Siri Cascudo
         </h2>
         {/* Imagem em baixa qualidade é normal, conforme seu comentário */}
-        <img src="/imagens/siri-cascudo.jpeg" alt="Fachada do Siri Cascudo" />
+        <img src="imagens/index_cases/siri-cascudo.jpeg" alt="Fachada do Siri Cascudo" />
       </section>
 
       <div className="container">
@@ -40,11 +40,11 @@ export default function Cases() {
             <h3>Imagens do Projeto</h3>
             <div className="galeria">
               <img
-                src="/imagens/cozinha-siri-cascudo.jpeg"
+                src="imagens/index_cases/cozinha-siri-cascudo.jpeg"
                 alt="Cozinha do Siri Cascudo"
               />
               <img
-                src="/imagens/intererior-siri-cascudo.jpeg"
+                src="/imagens/index_cases/interior-siri-cascudo.png"
                 alt="Interior do Siri Cascudo"
               />
             </div>
@@ -62,7 +62,7 @@ export default function Cases() {
             <div className="card-body">
               <h4>Case 1</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a className="arrow" href="/case-aberto.html" aria-label="Abrir Case 1">
+              <a className="arrow" href="#" aria-label="Abrir Case 1">
                 →
               </a>
             </div>
@@ -76,7 +76,7 @@ export default function Cases() {
             <div className="card-body">
               <h4>Case 2</h4>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a className="arrow" href="/case-aberto.html" aria-label="Abrir Case 2">
+              <a className="arrow" href="#" aria-label="Abrir Case 2">
                 →
               </a>
             </div>
