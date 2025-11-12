@@ -15,7 +15,7 @@ export default function Cases() {
           Projeto Mobile <br />-<br /> Siri Cascudo
         </h2>
         {/* Imagem em baixa qualidade é normal, conforme seu comentário */}
-        <img src="imagens/index_cases/siri-cascudo.jpeg" alt="Fachada do Siri Cascudo" />
+        <img src="imagens/bob_esponja.jpg" alt="Fachada do Siri Cascudo" />
       </section>
 
       <div className="container">
@@ -40,11 +40,11 @@ export default function Cases() {
             <h3>Imagens do Projeto</h3>
             <div className="galeria">
               <img
-                src="imagens/index_cases/cozinha-siri-cascudo.jpeg"
+                src="imagens/cozinha.jpg"
                 alt="Cozinha do Siri Cascudo"
               />
               <img
-                src="/imagens/index_cases/interior-siri-cascudo.png"
+                src="imagens/salao_siri_cascudo.jpg"
                 alt="Interior do Siri Cascudo"
               />
             </div>
