@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 import './Cases-Abertos.css';
 
 export default function Cases() {
@@ -90,9 +91,7 @@ export default function Cases() {
           Quer solucionar o seu problema e também fazer parte como um dos nossos
           cases de sucesso?
         </p>
-        <a className="cta-btn" href="/fale-conosco.html">
-          Inscreva-se
-        </a>
+        <Link className="ancora_forms" to="/Forms">Se inscreva</Link>
       </section>
     </main>
   );
