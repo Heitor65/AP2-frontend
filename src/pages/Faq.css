@@ -82,6 +82,7 @@ details>p {
   margin-top: 2em;
   display: flex;
   justify-content: center;
+  border-radius: 15px;
 }
 
 /* A box branca dentro da seção amarela */
