@@ -1,5 +1,5 @@
 import React from "react";
-import './Sobre.css';
+import './sobre.css';
 import ibmecBarra from '../assets/imagens/IBMEC_BARRA.png';
 import globo2 from '../assets/imagens/globo2.png';
 import metaLogo from '../assets/imagens/Meta-Logo.png';
