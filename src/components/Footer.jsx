@@ -5,6 +5,7 @@ import logoIbmec from '../assets/imagens/logo-ibmec.png';
 import iconInsta from '../assets/imagens/footer_icones/instagram-brands-solid-full.svg';
 import iconFace from '../assets/imagens/footer_icones/facebook-brands-solid-full.svg';
 import iconWpp from '../assets/imagens/footer_icones/whatsapp-brands-solid-full.svg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -18,12 +19,12 @@ function Footer() {
         <div className="footer-column">
           <h3>Navegação</h3>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="cases.html">Cases</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/sobre">Sobre Nós</Link></li>
+            <li><Link to="/cases">Cases de Sucesso</Link></li>
+            <li><Link to="/faq">FAQ</Link></li>
+            <li><Link to="/contato">Contato</Link></li>
+            <li><Link to="/Forms" className="fale-conosco">Fale Conosco</Link></li>
           </ul>
         </div>
 
