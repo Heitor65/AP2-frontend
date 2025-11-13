@@ -81,18 +81,16 @@ main {
 .projeto h3 {
     font-size: 2rem;
     margin: 0.5rem;
-    text-align: center;
 }
 
 .projeto p {
     font-size: 1.5rem;
     margin: 0.5rem;
     color: black;
-    text-align: left;
 }
 
 .projeto img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin: 1rem;
 }
@@ -138,7 +136,6 @@ a {
 .cta h4 {
     color: #092380;
     font-size: 3rem;
-    text-align: center;
 }
 
 .cta p {
@@ -155,14 +152,32 @@ a {
     color: white;
 }
 
+#titulo-secao {
+    font-size: 2rem;
+}
+
 @media (max-width: 480px) {
+    aside {
+        display: none;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container section {
+        width: 100%;
+    }
+
+    .projeto h3 {
+        text-align: center;
+    }
+
     .galeria img {
-        width: auto;
+        width: 90%;
     }
-    .card {
-        display: none;
-    }
-    aside h3 {
-        display: none;
+
+    .cta h4 {
+        text-align: center;
     }
 }
