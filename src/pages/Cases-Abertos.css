@@ -21,6 +21,7 @@ main {
 .seção-hero-cases-abertos h1 {
     font-size: 4rem;
     color: white;
+    text-align: center;
 }
 
 .titulo {
@@ -80,16 +81,18 @@ main {
 .projeto h3 {
     font-size: 2rem;
     margin: 0.5rem;
+    text-align: center;
 }
 
 .projeto p {
     font-size: 1.5rem;
     margin: 0.5rem;
     color: black;
+    text-align: left;
 }
 
 .projeto img {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: 1rem;
 }
@@ -135,6 +138,7 @@ a {
 .cta h4 {
     color: #092380;
     font-size: 3rem;
+    text-align: center;
 }
 
 .cta p {
@@ -149,4 +153,16 @@ a {
     padding: 1rem;
     border-radius: 10px;
     color: white;
+}
+
+@media (max-width: 480px) {
+    .galeria img {
+        width: auto;
+    }
+    .card {
+        display: none;
+    }
+    aside h3 {
+        display: none;
+    }
 }

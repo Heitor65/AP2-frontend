@@ -24,6 +24,7 @@ main {
 .seção-hero-cases h1 {
   font-size: 4rem;
   color: white;
+  text-align: center;
 }
 
 /* deixa o h3 e h2 no centro e alinhados com uma cor de fundo específica*/
@@ -62,8 +63,8 @@ main {
   border-radius: 61px;
   height: 440px;
   padding: 20px;
-  /* Anula o flex-wrap vazado */
-  display: block; 
+  display: flex;
+  flex-direction: column;
   flex-wrap: nowrap;
 }
 
@@ -77,8 +78,8 @@ main {
 
 /* 3. CORREÇÃO: Seletor mais específico para "vencer" o Home.css */
 .cases-container .cases-row {
-  display: grid; /* Garante o grid */
-  grid-template-columns: repeat(4, 1fr);
+  display: flex; /* Garante o grid */
+  
   gap: 32px;
   justify-items: center;
   /* Anula o flex-wrap vazado */
@@ -143,17 +144,25 @@ main {
 
   /* deixa os 4 cards lado a lado */
   .cases-container .cases-row { /* Seletor atualizado */
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     justify-items: center;
     width: 100%;
     padding: 0 8px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cases-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* deixa os cases se adaptarem à largura da coluna */
   .card {
-    width: 100%;
+    width: 70%;
     max-width: none;
     border-radius: 8px;
   }

@@ -110,11 +110,7 @@ button[type="submit"] {
 
 @media (max-width: 480px) {
 
-  /* Diminui o padding da página */
-  main {
-    padding: 1em;
-  }
-
+  
   /* Diminui o título principal */
   main>h1 {
     font-size: 2em;
