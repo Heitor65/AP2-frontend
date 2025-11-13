@@ -48,7 +48,7 @@ function Home() {
 
       <section className="cases-container"> {/* mini cases */}
         <h2>Cases de Sucesso</h2>
-        <div>
+        <div id="fundo-cinza">
           <article className="card">
             <img src={imgCaseMac} alt="fachada MacDonalds" />
             <h3>Case 1</h3>

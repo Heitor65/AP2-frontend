@@ -297,6 +297,10 @@ a {
         gap: 2rem;
     }
 
+    #fundo-cinza {
+        padding: 3rem;
+    }
+
     .card {
         background-color: white;
         border-radius: 10px;
