@@ -56,7 +56,6 @@ main {
   gap: 48px;
 }
 
-/* 2. CORREÇÃO: Seletor agora é mais específico para "vencer" o Home.css */
 .cases-container .cases-group {
   width: 95%;
   background-color: #B0B0B0;
@@ -64,25 +63,25 @@ main {
   height: 440px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
   flex-wrap: nowrap;
+  flex-direction: column;
 }
 
 /* tamanho e cor do h2 dos cases. */
 .cases-container .cases-group h2 {
-  font-size: 32px;
+  font-size: 1rem;
   margin-bottom: 1rem;
   text-align: left;
   color: #111;
 }
 
-/* 3. CORREÇÃO: Seletor mais específico para "vencer" o Home.css */
+
+
+
 .cases-container .cases-row {
-  display: flex; /* Garante o grid */
-  
+  display: flex;
   gap: 32px;
   justify-items: center;
-  /* Anula o flex-wrap vazado */
   flex-wrap: nowrap; 
 }
 
@@ -144,25 +143,17 @@ main {
 
   /* deixa os 4 cards lado a lado */
   .cases-container .cases-row { /* Seletor atualizado */
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
     justify-items: center;
     width: 100%;
     padding: 0 8px;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .cases-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   /* deixa os cases se adaptarem à largura da coluna */
   .card {
-    width: 70%;
+    width: 100%;
     max-width: none;
     border-radius: 8px;
   }

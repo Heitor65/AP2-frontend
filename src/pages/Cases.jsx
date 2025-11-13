@@ -15,7 +15,7 @@ function Cases() {
 
       <section className="cases-container">
         <div className="cases-group">
-          <h2>Sistemas embarcados</h2>
+          <h2 id='titulo-secao'>Sistemas embarcados</h2>
           <div className="cases-row">
 
             <article className="card">
@@ -49,7 +49,7 @@ function Cases() {
         </div>
 
         <div className="cases-group">
-          <h2>Projetos Front-end/Back-end</h2>
+          <h2 id='titulo-secao'>Projetos Front-end/Back-end</h2>
           <div className="cases-row">
 
             <article className="card">
@@ -80,7 +80,7 @@ function Cases() {
         </div>
 
         <div className="cases-group">
-          <h2>Projetos Mobile</h2>
+          <h2 id='titulo-secao'>Projetos Mobile</h2>
           <div className="cases-row">
 
             <article className="card">
